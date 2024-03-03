@@ -12,7 +12,7 @@
     />
   </head>
   <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-warning bg-opacity-25">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"> carica prodotti </a>
         <button
@@ -31,9 +31,6 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="./home-page.html">Home-page</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./detail.html">details</a>
-            </li>
           </ul>
         </div>
       </div>
@@ -42,10 +39,10 @@
   <body>
     <div class="container">
       <div class="row justify-content-left">
-        <div class="col-md-10 col-lg-7">
-          <h1 class="mt-5 mb-3 display-5 d-inline-block">inserisci prodotto</h1>
+        <div class="col-md-4 col-lg-7">
+          <h1 class="mt-5 mb-3 display-5 text-secondary">inserisci prodotto</h1>
           <h5 class="d-inline-block" id="title-alt"></h5>
-          <form>
+          <form class="form" id="myForm">
             <div class="mb-3">
               <label for="img" class="form-label">imageUrl</label>
               <input
@@ -77,12 +74,11 @@
             </div>
             <div class="mb-3">
               <label for="price" class="form-label">Prezzo</label>
-              <input type="number" class="form-control" id="price" />
+              <input type="number" class="form-control" id="price" required />
             </div>
-
-            <div class="d-flex justify-content-between">
-              <button type="submit" class="btn btn-primary">crea</button>
-              <button id="deleteBtn" type="button" class="btn btn-danger d-none" style="line-height: 0"></button>
+            <div class="d-flex card-footer justify-space-between">
+              <button class="btnSubmit btn btn-success" type="button">Aggiungi</button>
+              <button class="btnReset btn btn-warning px-4 text-white ms-2" type="button">Reset</button>
             </div>
           </form>
         </div>
